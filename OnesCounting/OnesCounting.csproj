@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11D84B75-C1EE-4E62-88B9-C399AF5956F7}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F896D47F-8E79-42DE-8EED-34EEEAD2E001}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NGene</RootNamespace>
-    <AssemblyName>NGene</AssemblyName>
+    <RootNamespace>OnesCounting</RootNamespace>
+    <AssemblyName>OnesCounting</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,30 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chromosome\BoolGenerator.cs" />
-    <Compile Include="Chromosome\RealChromosome.cs" />
-    <Compile Include="Chromosome\DoubleGenerator.cs" />
-    <Compile Include="Chromosome\IChromosomeGenerator.cs" />
-    <Compile Include="Chromosome\IGenerator.cs" />
-    <Compile Include="Chromosome\IntegerChromosome.cs" />
-    <Compile Include="Chromosome\BinaryChromosome.cs" />
-    <Compile Include="Chromosome\IChromosome.cs" />
-    <Compile Include="Chromosome\IntGenerator.cs" />
-    <Compile Include="EngineBuilder.cs" />
-    <Compile Include="Genotype.cs" />
-    <Compile Include="Engine.cs" />
-    <Compile Include="ISelector.cs" />
-    <Compile Include="Optimize.cs" />
-    <Compile Include="Phenotype.cs" />
-    <Compile Include="Population.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Random\DefaultRandom.cs" />
-    <Compile Include="Random\IRandomProvider.cs" />
-    <Compile Include="Random\NormalDistribution.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Crossover\" />
-    <Folder Include="Mutation\" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NGene\NGene.csproj">
+      <Project>{11d84b75-c1ee-4e62-88b9-c399af5956f7}</Project>
+      <Name>NGene</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

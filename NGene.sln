@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGene", "NGene\NGene.csproj", "{11D84B75-C1EE-4E62-88B9-C399AF5956F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGene.Tests", "NGene.Tests\NGene.Tests.csproj", "{9F742110-E2A3-4E84-A1CA-F001DDB8FDBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{E7F1788E-2187-4CEB-AEFF-87EE468A45EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnesCounting", "OnesCounting\OnesCounting.csproj", "{F896D47F-8E79-42DE-8EED-34EEEAD2E001}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,19 @@ Global
 		{11D84B75-C1EE-4E62-88B9-C399AF5956F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11D84B75-C1EE-4E62-88B9-C399AF5956F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11D84B75-C1EE-4E62-88B9-C399AF5956F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F742110-E2A3-4E84-A1CA-F001DDB8FDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F742110-E2A3-4E84-A1CA-F001DDB8FDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F742110-E2A3-4E84-A1CA-F001DDB8FDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F742110-E2A3-4E84-A1CA-F001DDB8FDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F896D47F-8E79-42DE-8EED-34EEEAD2E001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F896D47F-8E79-42DE-8EED-34EEEAD2E001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F896D47F-8E79-42DE-8EED-34EEEAD2E001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F896D47F-8E79-42DE-8EED-34EEEAD2E001}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F896D47F-8E79-42DE-8EED-34EEEAD2E001} = {E7F1788E-2187-4CEB-AEFF-87EE468A45EB}
 	EndGlobalSection
 EndGlobal
